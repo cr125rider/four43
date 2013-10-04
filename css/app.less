@@ -1,0 +1,107 @@
+@color1: rgb(80, 93, 49); //Dark Green
+@color2: rgb(122, 122, 70); //Green Mud
+@color3: rgb(80, 81, 47); //Brown
+@dark:   rgb(95, 93, 81); //Dark Grey 
+@light:  rgb(252, 251, 246); //Off-white
+
+@font-face {
+    font-family: 'molotregular';
+    src: url('/fonts/Molot-webfont.eot');
+    src: url('/fonts/Molot-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/Molot-webfont.woff') format('woff'),
+         url('/fonts/Molot-webfont.ttf') format('truetype'),
+         url('/fonts/Molot-webfont.svg#molotregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html,body {
+	min-height: 100%;
+}
+
+header { 
+	width: 100%;
+	height: 100vh;
+	/*Cop out*/
+	overflow: hidden;
+}
+
+nav {
+	padding-right: 0px !important;
+	padding-left:  0px !important;
+}
+
+a {
+	color: @color1;
+}
+
+a:hover, a:focus { 
+	color: @color3;
+}
+
+.nav-pills>li>a {
+	border-radius: 0px;
+	padding-left: 25px;
+}
+
+body.index { 
+	background-image: url('/img/rain-background.jpg'); 
+    background-attachment: fixed;
+    background-position: 50% 0px;
+    background-repeat: no-repeat no-repeat;
+	background-position: top center;
+}
+
+.block-container {
+	background-color: fadeout(@dark, 60%);
+}
+
+.tech-highlight {
+	margin-bottom: 10px;
+}
+
+.tech-container {
+	//width: 95%;
+	//margin-left: 2.5%;
+	background-color: fadeout(@color2, 30%);
+	//padding: 5px;
+}
+
+h1.title {
+	font-family: 'molotregular';
+	font-size: 5em;
+}
+h1.title span.numbers {
+	font-size: 1.2em;
+}
+
+#title-row {
+	padding-top: 15vh;
+}
+
+#navbar-top {
+	display: block;
+}
+#nav-side {
+	display: none;
+}
+
+#social-row {
+	margin-top: 50px;
+}
+
+
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 750px) {
+	#navbar-top {
+		display: none;
+	}
+	#nav-side {
+		display: block;
+	}
+
+	#title-row {
+		padding-top: 33vh;
+	}
+}

@@ -2,6 +2,7 @@
 <html>
 	<head>
 		<title>Four43 - Seth Miller</title>
+		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<!-- Bootstrap -->
 		<link href="/css/bootstrap.min.css" rel="stylesheet" media="screen">
@@ -11,67 +12,145 @@
 			<script src="/assets/js/html5shiv.js"></script>
 			<script src="/assets/js/respond.min.js"></script>
 		<![endif]-->
+		<script src="//code.jquery.com/jquery-2.0.3.min.js"></script>
+		<script src="/js/app.js"></script>
 	</head>
 	<body class="index">
 		<header>
-			<div id="header-row" class="row">
-				<nav class="col-sm-2 block-container">
+			<nav id="navbar-top" class="navbar navbar-inverse" role="navigation">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="#">Brand</a>
+				</div>
+
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse navbar-ex1-collapse">
+					<ul class="nav navbar-nav">
+						<li><a href="#about">About</a></li>
+						<li><a href="#work">Work</a></li>
+						<li><a href="#projects">Projects</a></li>
+						<li><a href="#thoughts">Thoughts</a></li>
+					</ul>
+				</div><!-- /.navbar-collapse -->
+			</nav>
+			<div id="title-row" class="row">
+				<nav id="nav-side" class="col-sm-2 block-container" role="navigation">
 					<ul class="nav nav-pills nav-stacked">
 						<li><a href="#about">About</a></li>
 						<li><a href="#work">Work</a></li>
 						<li><a href="#projects">Projects</a></li>
 						<li><a href="#thoughts">Thoughts</a></li>
 					</ul>
-				</nav>
+				</nav>d     
 				<div class="col-sm-5 col-sm-offset-1 block-container">
 					<h1 class="title"><span class="letters">FOUR</span><span class="numbers">43</span></h1>
 					<p class="lead">The professional home of <span class="name">Seth Miller</span></p>
 				</div>
 			</div>
 			<div id="social-row" class="row">
-				<div id="social-container" class="col-sm-4 col-sm-offset-3 block-container">
+				<div id="social-container" class="col-sm-offset-3 block-container">
 					This is where the social connect icons go.
 				</div>
 			</div>
 		</header>
-		<main class="index row col-sm-7 col-sm-offset-3">
-			<section id="about" class="row">
-				<p>
-					I am a 24 year old software  developer based out of Minneapolis, Minnesota.
-				</p>
-				<div class="col-sm-4">
-					<h2>Web</h2>
-					<p>
-						Experience in connecting users with content they need. I have helped 
-						create web apps and have designed and created web APIs for consumption by other
-						systems and mobile devices. An API centric model is essential for a for a growing
-						flexible business.
+		<div class="index col-sm-7 col-sm-offset-3">
+			<section id="about">
+				<div id="about-me">
+					<p class="col-sm-12">
+						I am a 24 year old software developer based out of Minneapolis, Minnesota. I am passionate
+						about the open web and the opportunities it brings to communication and business around the
+						world. Traditional database and other storage systems are also one of my interests. Combining
+						the two with security in the center I help can create products that solve a wide range of 
+						problems.
 					</p>
 				</div>
-				<div class="col-sm-4">
-					<h2>Big Data</h2>
-					<p>
-						With a background in traditional relational databases and experience in the more 
-						loose No-SQL data stores, I have worked with a broad range of storage systems for
-						a wide range data set requirements.
-					</p>
-				</div>
-				<div class="col-sm-4">
-					<h2>Security</h2>
-					<p>
-						Everyone has the right to share content securly and anonymously. Systems I help create
-						are secure using the latest proven web technologies to keep company and user data 
-						safe and only in the right hands. 
-					</p>
+				<div id="my-tech">
+					<div class="col-sm-4 tech-highlight">
+						<div class="tech-container">
+							<h2>Web</h2>
+							<p>
+								Experience in connecting users with content they need. I have helped 
+								create web apps and have designed and created web APIs for consumption by other
+								systems and mobile devices. An API centric model is essential for a growing
+								flexible business.
+							</p>
+						</div>
+					</div>
+					<div class="col-sm-4 tech-highlight">
+						<div class="tech-container">
+							<h2>Big Data</h2>
+							<p>
+								With a background in traditional relational databases and experience in the more 
+								loose No-SQL data stores, I have worked with a broad range of storage systems for
+								a wide range data set requirements.
+							</p>
+						</div>
+					</div>
+					<div class="col-sm-4 tech-highlight">
+						<div class="tech-container">
+							<h2>Security</h2>
+							<p>
+								Everyone has the right to share content securly and anonymously. Systems I help create
+								are secure using the latest proven web and cryptographic technologies to keep company 
+								and user data safe. 
+							</p>
+						</div>
+					</div>
 				</div>
 			</section>
 
 			<section id="work">
+				<ol>
+					<li>	
+						<h3>Media Logic Group</h3>
+						<h4>Senior Software Developer</h4> 
+						<span class="experience-date">
+							<time datetime="2011-02-01">February 2011</time>
+							- 
+							<time>Present</time>
+						</span>
+						<p class="description">
+							During my time at Media Logic Group we have created a variety of 
+							API backed web applications. I have had the opportunity to lead 
+							projects through the whole life cycle from conception, through planning,
+							design, and full backend and frontend execution. APIs have been key
+							to our success as a flexible small company and designing them has been
+							very exciting. We work with a variety of data sources and technologies 
+							to fulfill our clients needs.
+						</p>
+					</li>
+					<li>	
+						<h3>The University of Minnesota</h3>
+						<h4>Undergraduate Web/Database Developer</h4>
+						<span class="experience-date">
+							<time datetime="2008-09-01">September 2008</time>
+							- 
+							<time datetime="2011-02-01">February 2011</time>
+							<time> (2 years 6 months)</time>
+						</span>
+						<p class="description">
+							With the opportunity to try many different aspects of IT, including
+							network administration, server administration, software development and
+							help desk, I found I enjoyed software development the best. We created many
+							internal apps for faculty and staff and helped deploy a host of new services.
+						</p>
+					</li>
 
+				</ol>
 			</section>
 
 			<section id="projects">
-
+				<ul>
+					<li>
+						<h3>451</h3>
+					</li>
+				</ul>
 			</section>
 
 			<section id="thoughts">
@@ -90,7 +169,7 @@
 				<h1>Hello, world!</h1>
 				<h1>Hello, world!</h1>
 			</section>
-		</main>
+		</div>
 		<footer></footer>
 
 
