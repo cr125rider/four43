@@ -6,7 +6,6 @@ define(['app', 'backbone', 'jquery', 'moment'], function(App, Backbone, $, Momen
 				dateDisplay: 'nope'
 			},
 			initialize: function() {
-				console.log('Initializing');
 				this.on('change:unix-timestamp add', this.renderDate, this);
 				this.on('add', this.parseEmbed, this);
 			},
@@ -25,10 +24,8 @@ define(['app', 'backbone', 'jquery', 'moment'], function(App, Backbone, $, Momen
 				}
 			},		
 			renderDate: function(model, event) {
-				console.log(model.get('unix-timestamp'));
 				var dateTime = Moment.unix(model.get('unix-timestamp')).format('h:mm:ss a YYYY-MM-DD');
 				model.set('dateDisplay', dateTime);
-				console.log(model);
 			}
 		});
 
