@@ -28,7 +28,7 @@ html,body {
 
 header { 
 	width: 100%;
-	height: 100vh;
+	height: 10vmax;
 	/*Cop out*/
 	overflow: hidden;
 }
@@ -90,10 +90,16 @@ body.index {
 	padding-left: 45px;
 }
 
+.navbar-brand {
+	font-family: 'molotregular';
+	display: none;
+}
+
 h1.title {
 	font-family: 'molotregular';
 	font-size: 5em;
 }
+	
 h1.title span.numbers {
 	font-size: 1.2em;
 }
@@ -111,7 +117,7 @@ section {
 }
 
 #title-row {
-	padding-top: 15vh;
+	padding-top: 100px;
 }
 
 #navbar-top {
@@ -182,6 +188,9 @@ section {
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 750px) {
+	header {
+		height: 100vh;
+	}
 	.fluid-container {
 		//padding-left: 15px;
 		padding-right: 15px;

@@ -11,7 +11,7 @@ body {
 }
 header {
   width: 100%;
-  height: 100vh;
+  height: 10vmax;
   /*Cop out*/
 
   overflow: hidden;
@@ -60,6 +60,10 @@ body.index {
 .header-right-col {
   padding-left: 45px;
 }
+.navbar-brand {
+  font-family: 'molotregular';
+  display: none;
+}
 h1.title {
   font-family: 'molotregular';
   font-size: 5em;
@@ -79,7 +83,7 @@ section ul > li {
   margin-bottom: 10px;
 }
 #title-row {
-  padding-top: 15vh;
+  padding-top: 100px;
 }
 #navbar-top {
   display: block;
@@ -132,6 +136,9 @@ section ul > li {
 }
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 750px) {
+  header {
+    height: 100vh;
+  }
   .fluid-container {
     padding-right: 15px;
   }
