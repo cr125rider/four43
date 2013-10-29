@@ -116,6 +116,11 @@ section ul > li {
 #work > ol > li {
   background-color: rgba(165, 172, 101, 0.8);
 }
+#work .work-projects-expand {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+}
 #projects > .section-header {
   background-color: rgba(180, 177, 159, 0.7);
 }
