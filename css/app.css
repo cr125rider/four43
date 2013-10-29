@@ -141,6 +141,9 @@ section ul > li {
 #updates img {
   width: 100%;
 }
+#tumblr-content time {
+  float: right;
+}
 .social-link {
   display: inline-block;
   width: 75px;

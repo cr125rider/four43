@@ -246,26 +246,29 @@
 		</ul>
 	</script>
 	<script type="text/x-handlebars-template" id="post-audio-template">
-		<h1>{{id3-title}}</h1>
 		<time datetime="{{date-gmt}}">{{dateDisplay}}</time>
+		<h1>{{id3-title}}</h1>
 		{{{audio-player}}}
 		<div class="panel-footer">{{{audio-caption}}}</div>
 	</script>
 	<script type="text/x-handlebars-template" id="post-link-template">
-		<h1>{{link-text}}</h1>
 		<time datetime="{{date-gmt}}">{{dateDisplay}}</time>
+		<h1>{{link-text}}</h1>
 		<a href="{{link-url}}">{{link-url}}</a>
 		{{{link-description}}}
 	</script>
 	<script type="text/x-handlebars-template" id="post-photo-template">
+		<time datetime="{{date-gmt}}">{{dateDisplay}}</time>
 		<img src="{{photo-url-400}}"/>
 		<div class="panel-footer">{{{photo-caption}}}</div>
 	</script>
 	<script type="text/x-handlebars-template" id="post-regular-template">
+		<time datetime="{{date-gmt}}">{{dateDisplay}}</time>
 		<h1>{{regular-title}}</h1>
 		{{{regular-body}}}
 	</script>
 	<script type="text/x-handlebars-template" id="post-video-template">
+		<time datetime="{{date-gmt}}">{{dateDisplay}}</time>
 		{{{video-player}}}
 		<div class="panel-footer">{{{video-caption}}}</div>
 	</script>
