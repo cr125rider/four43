@@ -31,6 +31,7 @@ header {
 	height: 10vmax;
 	/*Cop out*/
 	overflow: hidden;
+	min-height: 500px;
 }
 
 nav {
@@ -99,7 +100,7 @@ h1.title {
 	font-family: 'molotregular';
 	font-size: 5em;
 }
-	
+
 h1.title span.numbers {
 	font-size: 1.2em;
 }
@@ -129,6 +130,13 @@ section {
 
 #social-row {
 	margin-top: 50px;
+	padding-left: 0px;
+
+	#social-container {
+		padding-left: 0px;
+		width: auto;
+		padding-right: 25px;
+	}
 }
 
 #about > .section-header {
@@ -183,6 +191,25 @@ section {
 	}
 	iframe, img {
 		width: 100%;
+	}
+}
+
+.social-link {
+	display:inline-block;
+	width: 75px;
+	text-align: center;
+	padding: 20px;
+	i {
+		font-size: 3em;
+		height: 1.5em;
+		width: 1.5em;
+		display: inline-block;
+		background-color: #E1DED5;
+		&:hover { background-color: #FFF; }
+
+		&.icon-github { color: #000; }
+		&.icon-linkedin { color: #1B86BC; }
+		&.icon-twitter { color: #4695D7; }
 	}
 }
 

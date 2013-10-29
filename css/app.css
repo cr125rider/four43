@@ -15,6 +15,7 @@ header {
   /*Cop out*/
 
   overflow: hidden;
+  min-height: 500px;
 }
 nav {
   padding-right: 0px !important;
@@ -93,6 +94,12 @@ section ul > li {
 }
 #social-row {
   margin-top: 50px;
+  padding-left: 0px;
+}
+#social-row #social-container {
+  padding-left: 0px;
+  width: auto;
+  padding-right: 25px;
 }
 #about > .section-header {
   background-color: rgba(141, 138, 129, 0.7);
@@ -133,6 +140,31 @@ section ul > li {
 #updates iframe,
 #updates img {
   width: 100%;
+}
+.social-link {
+  display: inline-block;
+  width: 75px;
+  text-align: center;
+  padding: 20px;
+}
+.social-link i {
+  font-size: 3em;
+  height: 1.5em;
+  width: 1.5em;
+  display: inline-block;
+  background-color: #E1DED5;
+}
+.social-link i:hover {
+  background-color: #FFF;
+}
+.social-link i.icon-github {
+  color: #000;
+}
+.social-link i.icon-linkedin {
+  color: #1B86BC;
+}
+.social-link i.icon-twitter {
+  color: #4695D7;
 }
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 750px) {
