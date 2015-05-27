@@ -1,9 +1,13 @@
 import React from 'react';
-import Title from './components/Title';
+
+
 import About from './components/About';
+import Highlights from './components/Highlights';
+import Nav from './components/Nav';
 import Projects from './components/Projects';
-import Values from './components/Values';
+import Title from './components/Title';
 import Updates from './components/Updates';
+import Values from './components/Values';
 import Work from './components/Work';
 
 export default
@@ -12,17 +16,15 @@ class App extends React.Component {
         return (
             <div>
                 <header>
+                    <Nav />
                     <Title />
                 </header>
-                <div className="index row">
-                    <div className="col-sm-offset-3 col-sm-7">
-                        <About />
-                        <Work />
-                        <Projects />
-                        <Values />
-                        <Updates />
-                    </div>
-                </div>
+                <About />
+                <Highlights />
+                <Work />
+                <Projects />
+                <Values />
+                <Updates />
             </div>
         );
     }
