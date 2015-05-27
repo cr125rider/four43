@@ -1,3 +1,4 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,300,900);
 @font-face {
   font-family: 'molotregular';
   src: url('../fonts/Molot-webfont.eot');
@@ -8,12 +9,13 @@
 html,
 body {
   min-height: 100%;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
 }
 header {
   width: 100%;
   height: 10vmax;
   /*Cop out*/
-
   overflow: hidden;
   min-height: 500px;
 }
@@ -21,28 +23,28 @@ nav {
   padding-right: 0px !important;
   padding-left: 0px !important;
 }
+nav#main-nav a:hover {
+  background-color: #3c3c25;
+  color: #7b7b4c;
+}
+nav#main-nav .nav-pills > li > a {
+  border-radius: 0px;
+  padding-left: 25px;
+  padding-right: 25px;
+}
 a {
-  color: #505d31;
+  color: #3c3c25;
 }
 a:hover,
 a:focus {
-  color: #50512f;
+  color: #7b7b4c;
 }
 .row {
   margin-right: -5px;
   margin-left: -5px;
 }
-.nav-pills > li > a {
-  border-radius: 0px;
-  padding-left: 25px;
-}
 body.index {
-  background-image: url('../img/rain-background.jpg');
-  background-attachment: fixed;
-  background-position: 50% 0px;
-  background-repeat: no-repeat no-repeat;
-  background-position: top center;
-  background-color: #5c5a4e;
+  background: #5c5a4e url('../img/rain-background.jpg') no-repeat no-repeat fixed top center;
 }
 .fluid-container {
   margin-left: auto;
@@ -53,9 +55,10 @@ body.index {
 }
 .tech-highlight {
   margin-bottom: 10px;
+  text-align: center;
+  padding: 3rem;
 }
 .tech-container {
-  background-color: rgba(141, 138, 129, 0.7);
   padding: 15px;
 }
 .header-right-col {
@@ -83,11 +86,58 @@ section ul > li {
   margin-top: 10px;
   margin-bottom: 10px;
 }
+.feature-icon {
+  display: inline-block;
+  position: relative;
+  padding-bottom: 5em;
+  margin-bottom: 2.75em;
+  cursor: default;
+  text-align: center;
+}
+.feature-icon .icon {
+  display: inline-block;
+  width: 2em;
+  height: 2em;
+  font-size: 4.5em;
+  border-radius: 100%;
+  line-height: 2.1em;
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.5);
+  color: #fff;
+}
+.feature-icon:before {
+  content: '';
+  background: #666;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  margin-left: -0.325em;
+  width: 0.65em;
+  height: 0.65em;
+  display: block;
+  border-radius: 100%;
+  background: rgba(255, 255, 255, 0.5);
+}
+.feature-icon:after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 0.65em;
+  width: 1px;
+  height: 4.35em;
+  background: #666;
+  margin-left: -0.5px;
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.5);
+}
 #title-row {
-  padding-top: 100px;
+  padding-top: 20px;
 }
 #navbar-top {
   display: block;
+}
+#nav-row {
+  margin-top: 25vh;
 }
 #nav-side {
   display: none;
@@ -99,11 +149,27 @@ section ul > li {
 #social-row #social-container {
   padding-left: 0px;
   width: auto;
-  padding-right: 25px;
+  padding-right: 0px;
+}
+#about {
+  background-color: #FFF;
+}
+#headshot-container {
+  text-align: center;
+}
+#headshot {
+  width: 250px;
+  margin-top: 55px;
+  margin-bottom: 55px;
+  padding-left: 10px;
 }
 #about > .section-header {
   background-color: rgba(141, 138, 129, 0.7);
   margin-bottom: 15px;
+}
+#highlights {
+  background: url('../img/grain-overlay.png'), linear-gradient(45deg, #b2b1a9 0%, #9e9d94 4%, #616c41 28%, #525f31 47%, #525f31 58%, #636645 80%, #5e5c50 100%);
+  color: #FFF;
 }
 #my-tech > div {
   padding-left: 0px;
@@ -146,31 +212,26 @@ section ul > li {
 }
 .social-link {
   display: inline-block;
-  width: 75px;
   text-align: center;
-  padding: 20px;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+.social-link:hover {
+  background-color: #3c3c25;
+  color: #7b7b4c;
 }
 .social-link i {
-  font-size: 3em;
-  height: 1.5em;
-  width: 1.5em;
+  font-size: 2em;
   display: inline-block;
-  background-color: #E1DED5;
-}
-.social-link i:hover {
-  background-color: #FFF;
-}
-.social-link i.icon-github {
-  color: #000;
-}
-.social-link i.icon-linkedin {
-  color: #1B86BC;
-}
-.social-link i.icon-twitter {
-  color: #4695D7;
 }
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 750px) {
+  html,
+  body {
+    font-size: 1.2em;
+  }
   header {
     height: 100vh;
   }
@@ -184,7 +245,12 @@ section ul > li {
     display: block;
   }
   #title-row {
-    padding-top: 33vh;
+    padding-top: 20px;
+  }
+  #headshot {
+    width: 250px;
+    margin-top: 55px;
+    padding-left: 10px;
   }
   .header-right-col {
     padding-left: 20px;
