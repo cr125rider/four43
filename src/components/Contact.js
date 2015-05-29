@@ -12,8 +12,8 @@ class Contact extends React.Component {
                     <h2>Interested?</h2>
                     <h3>Seth is available for consulting for your Web or Big Data project:</h3>
                     <div className="contact-footer">
-                        <a className="btn btn-success btn-lg"><i className="fa fa-envelope" title="Email me directly"></i> Email</a>
-                        <a className="btn btn-success btn-lg"><i className="fa fa-linkedin-square"></i> LinkedIn</a>
+                        <a className="btn btn-success btn-lg" href="mailto:seth@four43.com" title="Email me directly"><i className="fa fa-envelope"></i> Email</a>
+                        <a className="btn btn-success btn-lg" href="https://www.linkedin.com/in/four43" title="Message me on LinkedIn"><i className="fa fa-linkedin-square"></i> LinkedIn</a>
                     </div>
                 </div>
             </div>
