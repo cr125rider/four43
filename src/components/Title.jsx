@@ -18,8 +18,8 @@ class Title extends React.Component {
                 </div>
                 <div id="social-row" className="row">
                     <div id="social-container" className="col-xs-3 col-sm-7 col-sm-offset-3 block-container header-right-col">
-                        <a id="social-github" className="social-link" href="https://github.com/cr125rider">
-                            <i className="fa fa-github-alt" title="Fork me on GitHub - cr125rider"></i>
+                        <a id="social-github" className="social-link" href="https://github.com/four43">
+                            <i className="fa fa-github-alt" title="View my profile on GitHub - four43"></i>
                         </a>
                         <a id="social-linkedin" className="social-link" href="http://www.linkedin.com/profile/view?id=57827297">
                             <i className="fa fa-linkedin-square" title="View my professional profile on LinkedIn"></i>
