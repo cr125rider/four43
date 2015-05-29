@@ -24,7 +24,7 @@ class About extends React.Component {
 
     render() {
         return (
-            <section id="about" className="container-fluid">
+            <section id="about" className="container-fluid plain">
                 <div className="row">
                     <div className="section-header col-sm-4 col-sm-offset-3 section-header">
 

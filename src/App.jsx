@@ -2,6 +2,7 @@ import React from 'react';
 
 
 import About from './components/About';
+import Contact from './components/Contact';
 import Highlights from './components/Highlights';
 import Nav from './components/Nav';
 import Projects from './components/Projects';
@@ -24,7 +25,7 @@ class App extends React.Component {
                 <Work />
                 <Projects />
                 <Values />
-                <Updates />
+                <Contact />
             </div>
         );
     }

@@ -26,7 +26,7 @@ class Nav extends React.Component {
                     </div>
                 </nav>
                 <div id="nav-row" className="row">
-                    <nav id="main-nav" className="col-sm-6 col-sm-offset-3 block-container" role="navigation">
+                    <nav id="main-nav" className="col-sm-6 col-sm-offset-3 hidden-xs block-container" role="navigation">
                         <ul className="nav nav-pills">
                             <li>
                                 <a href="#about">About</a>
