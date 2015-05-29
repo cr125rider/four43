@@ -21,7 +21,7 @@ class Title extends React.Component {
                         <a id="social-github" className="social-link" href="https://github.com/four43">
                             <i className="fa fa-github-alt" title="View my profile on GitHub - four43"></i>
                         </a>
-                        <a id="social-linkedin" className="social-link" href="http://www.linkedin.com/profile/view?id=57827297">
+                        <a id="social-linkedin" className="social-link" href="https://www.linkedin.com/in/four43">
                             <i className="fa fa-linkedin-square" title="View my professional profile on LinkedIn"></i>
                         </a>
                         <a id="social-twitter" className="social-link" href="https://twitter.com/seth_j_miller">
