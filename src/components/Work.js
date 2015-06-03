@@ -56,12 +56,12 @@ class Work extends React.Component {
                                 <time>Present</time>
                             </span>
                             <p className="description">
-                                At Media Logic Group Seth has created a variety of
+                                At AerisWeather, Seth has created a variety of
                                 API backed web applications. He has had the opportunity to lead
                                 projects through the whole life cycle from conception, through planning,
                                 design, as well as full backend and frontend execution. APIs have been key
                                 AerisWeather's success as a flexible small company and designing them has been
-                                very exciting. They work with a variety of data sources and technologies
+                                very exciting. AerisWeather worka with a variety of data sources and technologies
                                 to fulfill their clients needs, also allowing Seth to learn a diverse skill set.
                             </p>
                             <button className="btn btn-link btn-lg" onClick={() => this.toggle('aerisWeatherMoreShowing')}>{aerisWeatherMoreText}</button>
