@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "Boilerplate for ReactJS project with hot code reloading",
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "build": "./node_modules/.bin/webpack --config ./webpack.config.prod.js"
   },
   "repository": {
     "type": "git",
@@ -34,6 +35,7 @@
     "webpack-dev-server": "^1.8.2"
   },
   "dependencies": {
+    "moment": "^2.10.6",
     "react": "^0.13.0"
   }
 }
