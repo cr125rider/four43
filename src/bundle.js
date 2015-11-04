@@ -20752,7 +20752,6 @@ var Values = (function (_React$Component) {
                     largestHeight = height;
                 }
             }
-            console.log('largestHeight: ' + largestHeight);
             for (i = 0; i < 3; i++) {
                 _react2['default'].findDOMNode(this.refs['col-' + i]).style.minHeight = largestHeight + 'px';
             }

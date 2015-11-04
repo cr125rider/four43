@@ -16,8 +16,8 @@ class Work extends React.Component {
         var newState = {};
         newState[id] = !this.state[id];
         this.setState(newState);
-        console.log(this.state);
-        /*alert(id);
+        /*console.log(this.state);
+        alert(id);
         console.log(React.findDOMNode(this.refs[id]));*/
     }
 
