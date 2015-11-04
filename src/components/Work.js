@@ -61,16 +61,16 @@ class Work extends React.Component {
                                 projects through the whole life cycle from conception, through planning,
                                 design, as well as full backend and frontend execution. APIs have been key
                                 AerisWeather's success as a flexible small company and designing them has been
-                                very exciting. AerisWeather worka with a variety of data sources and technologies
+                                very exciting. AerisWeather works with a variety of data sources and technologies
                                 to fulfill their clients needs, also allowing Seth to learn a diverse skill set.
                             </p>
                             <button className="btn btn-link btn-lg" onClick={() => this.toggle('aerisWeatherMoreShowing')}>{aerisWeatherMoreText}</button>
                             <div className={aerisWeatherMoreClasses}>
                                 Here are more techinical details:
                                 <ul className="details">
-                                    <li>System administartion LAMP stack (Linux, Apache, MySQL, PHP)</li>
-                                    <li>Transition to Node.js and asyncronous and event based programming</li>
-                                    <li>Enterprise grade applications built on Zend Framework with Simphony components</li>
+                                    <li>System administration LAMP stack (Linux, Apache, MySQL, PHP)</li>
+                                    <li>Transition to Node.js and asynchronous and event based programming</li>
+                                    <li>Enterprise grade applications built on Zend Framework with Simfony components</li>
                                     <li>MongoDB as a large scale data store, thousands of writes per second.</li>
                                     <li>Primary cloud developer/DevOps - Amazon Web Services (AWS)</li>
                                     <li>We utilize a variety of AWS resources, EC2, ElasticBeanstalk, SQS, SNS, etc.</li>
@@ -78,7 +78,7 @@ class Work extends React.Component {
                                     <li>API Design - According to best practice full REST APIs</li>
                                     <li>JSON is used as the main transport data format</li>
                                     <li>API creation for mobile applications</li>
-                                    <li>OAuth2 protected APIs, full stack security implemention</li>
+                                    <li>OAuth2 protected APIs, full stack security implementation</li>
                                     <li>Graphic design experience in Adobe Photoshop</li>
                                     <ul>
                                         <li>User interface wireframing</li>
