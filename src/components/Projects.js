@@ -16,6 +16,20 @@ class Projects extends React.Component {
                 <ul>
                     <li className="row">
                         <div className="content-container col-sm-6 col-sm-offset-3">
+                            <h3>Crisp Cache -&nbsp;
+                                <a className="lead" href="https://github.com/four43/admiral-cli">github.com/four43/crisp-cache</a>
+                            </h3>
+                            <p>
+                                An always up to date cache for high throughput applications. Crisp Cache adds "stale" to the
+                                lifecycle of a cache element. Stale entries are used from the cache while Crisp Cache fetches
+                                new cache entries in the background. Responsive applications need reliable consistent streams
+                                of data, and Crisp Cache fills the void over other caches that may block when an entry is expired
+                                or goes past it's TTL.
+                            </p>
+                        </div>
+                    </li>
+                    <li className="row">
+                        <div className="content-container col-sm-6 col-sm-offset-3">
                             <h3>Admiral CLI -&nbsp;
                                 <a className="lead" href="https://github.com/four43/admiral-cli">github.com/four43/admiral-cli</a>
                             </h3>
