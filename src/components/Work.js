@@ -1,5 +1,6 @@
 import React from 'react';
 import classNames from 'classnames';
+import moment from 'moment';
 
 export default
 class Work extends React.Component {
@@ -8,7 +9,8 @@ class Work extends React.Component {
 
         this.state = {
             aerisWeatherMoreShowing: false,
-            uOfMMoreShowing: false
+            uOfMMoreShowing: false,
+            currentEmploymentStart: moment("2011-02-01", "YYYY-MM-DD")
         };
     }
 
@@ -35,6 +37,9 @@ class Work extends React.Component {
         var aerisWeatherMoreText = (this.state.aerisWeatherMoreShowing)?'Less -':'More +';
         var uOfMMoreText = (this.state.uOfMMoreShowing)?'Less -':'More +';
 
+        var now = moment();
+        var currentEmploymentDuration = moment.duration(now.diff(this.state.currentEmploymentStart)).humanize();
+
         return (
             <section id="work" className="container-fluid plain">
                 <div className="section-header row">
@@ -54,6 +59,7 @@ class Work extends React.Component {
                                 <time dateTime="2011-02-01">February 2011</time>
                                 -
                                 <time>Present</time>
+                                <time> (~{{currentEmploymentDuration}})</time>
                             </span>
                             <p className="description">
                                 At AerisWeather, Seth has created a variety of
@@ -66,13 +72,14 @@ class Work extends React.Component {
                             </p>
                             <button className="btn btn-link btn-lg" onClick={() => this.toggle('aerisWeatherMoreShowing')}>{aerisWeatherMoreText}</button>
                             <div className={aerisWeatherMoreClasses}>
-                                Here are more techinical details:
+                                Here are more technical details:
                                 <ul className="details">
                                     <li>System administration LAMP stack (Linux, Apache, MySQL, PHP)</li>
                                     <li>Transition to Node.js and asynchronous and event based programming</li>
                                     <li>Enterprise grade applications built on Zend Framework with Simfony components</li>
                                     <li>MongoDB as a large scale data store, thousands of writes per second.</li>
                                     <li>Primary cloud developer/DevOps - Amazon Web Services (AWS)</li>
+                                    <li>Docker container deployment and administration with Kubernetes and Docker-Compose</li>
                                     <li>We utilize a variety of AWS resources, EC2, ElasticBeanstalk, SQS, SNS, etc.</li>
                                     <li>Multiple data sources and parsers, from raw binary TCP sockets to other web APIs, JSON, and SOAP</li>
                                     <li>API Design - According to best practice full REST APIs</li>
@@ -107,7 +114,7 @@ class Work extends React.Component {
                             </p>
                             <button className="btn btn-link btn-lg" onClick={() => this.toggle('uOfMMoreShowing')}>{uOfMMoreText}</button>
                             <div className={uOfMMoreClasses}>
-                                Here are more techinical details:
+                                Here are more technical details:
                                 <ul className="details">
                                     <li>Intro to full stack management for LAMP stack (Linux, Apache, MySQL, PHP)</li>
                                     <li>Many internal web applications for staff and faculty</li>
