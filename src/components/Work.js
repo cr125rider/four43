@@ -73,6 +73,7 @@ class Work extends React.Component {
                                     <li>Enterprise grade applications built on Zend Framework with Simfony components</li>
                                     <li>MongoDB as a large scale data store, thousands of writes per second.</li>
                                     <li>Primary cloud developer/DevOps - Amazon Web Services (AWS)</li>
+                                    <li>Docker container deployment and administration with Kubernetes and Docker-Compose</li>
                                     <li>We utilize a variety of AWS resources, EC2, ElasticBeanstalk, SQS, SNS, etc.</li>
                                     <li>Multiple data sources and parsers, from raw binary TCP sockets to other web APIs, JSON, and SOAP</li>
                                     <li>API Design - According to best practice full REST APIs</li>
