@@ -1,5 +1,6 @@
 import React from 'react';
 import classNames from 'classnames';
+import moment from 'moment';
 
 export default
 class Work extends React.Component {
@@ -8,7 +9,8 @@ class Work extends React.Component {
 
         this.state = {
             aerisWeatherMoreShowing: false,
-            uOfMMoreShowing: false
+            uOfMMoreShowing: false,
+            currentEmploymentStart: moment("2011-02-01", "YYYY-MM-DD")
         };
     }
 
@@ -35,6 +37,9 @@ class Work extends React.Component {
         var aerisWeatherMoreText = (this.state.aerisWeatherMoreShowing)?'Less -':'More +';
         var uOfMMoreText = (this.state.uOfMMoreShowing)?'Less -':'More +';
 
+        var now = moment();
+        var currentEmploymentDuration = moment.duration(now.diff(this.state.currentEmploymentStart)).humanize();
+
         return (
             <section id="work" className="container-fluid plain">
                 <div className="section-header row">
@@ -54,6 +59,7 @@ class Work extends React.Component {
                                 <time dateTime="2011-02-01">February 2011</time>
                                 -
                                 <time>Present</time>
+                                <time> (~{{currentEmploymentDuration}})</time>
                             </span>
                             <p className="description">
                                 At AerisWeather, Seth has created a variety of
@@ -66,7 +72,7 @@ class Work extends React.Component {
                             </p>
                             <button className="btn btn-link btn-lg" onClick={() => this.toggle('aerisWeatherMoreShowing')}>{aerisWeatherMoreText}</button>
                             <div className={aerisWeatherMoreClasses}>
-                                Here are more techinical details:
+                                Here are more technical details:
                                 <ul className="details">
                                     <li>System administration LAMP stack (Linux, Apache, MySQL, PHP)</li>
                                     <li>Transition to Node.js and asynchronous and event based programming</li>
@@ -108,7 +114,7 @@ class Work extends React.Component {
                             </p>
                             <button className="btn btn-link btn-lg" onClick={() => this.toggle('uOfMMoreShowing')}>{uOfMMoreText}</button>
                             <div className={uOfMMoreClasses}>
-                                Here are more techinical details:
+                                Here are more technical details:
                                 <ul className="details">
                                     <li>Intro to full stack management for LAMP stack (Linux, Apache, MySQL, PHP)</li>
                                     <li>Many internal web applications for staff and faculty</li>
