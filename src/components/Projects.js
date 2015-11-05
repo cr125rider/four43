@@ -8,9 +8,7 @@ class Projects extends React.Component {
                 <div className="section-header row">
                     <div className="content-container col-sm-6 col-sm-offset-3">
                         <h2>Projects</h2>
-                        <p>
-                            Other development related projects that keep be busy on top of my other hobbies.
-                        </p>
+                        <h3>Open-Source development</h3>
                     </div>
                 </div>
                 <ul>

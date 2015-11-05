@@ -11,7 +11,7 @@ class Values extends React.Component {
                 largestHeight = height;
             }
         }
-        console.log("largestHeight: " + largestHeight);
+        //console.log("largestHeight: " + largestHeight);
         for (i = 0; i < 3; i++) {
             React.findDOMNode(this.refs['col-' + i]).style.minHeight = largestHeight+'px';
         }
@@ -22,7 +22,7 @@ class Values extends React.Component {
             <section id="values" className="container-fluid plain">
                 <div className="section-header row">
                     <div className="col-sm-12">
-                        <h2>Thoughts <small>Other values and goals.</small></h2>
+                        <h2>Thoughts</h2><h3>Other values and goals.</h3>
                     </div>
                 </div>
                 <ul className="row">
@@ -30,9 +30,9 @@ class Values extends React.Component {
                         <div className="content-container">
                             <h3>Real Value</h3>
                             <p>
-                                Create software that helps people. Good developers and good software companies create products
+                                Create software that is beneficial. Good developers and good software companies create products
                                 that have value to real people. Software helps people, keeps them safe, or helps them more efficiently
-                                create other products to help other people and I want to be a part of it.
+                                create other products to help other people. I want to be a part of that.
                             </p>
                         </div>
                     </li>
@@ -43,7 +43,7 @@ class Values extends React.Component {
                                 Be verbose, open, and truthful. Free speech and the world's knowledge at our fingertips
                                 are things I don't take lightly living in the US. Everyone deserves transparency from their
                                 government, to know full history, and have the ability to openly share thoughts with everyone
-                                or only the ones the care about.
+                                or only the ones they care about.
                             </p>
                         </div>
                     </li>
