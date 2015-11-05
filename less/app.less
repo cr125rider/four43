@@ -73,6 +73,10 @@ a:hover, a:focus, button.btn.btn-link:hover, button.btn.btn-link:active {
   color: lighten(@greenMud, 20%);
 }
 
+.print-only {
+  display: none;
+}
+
 .row {
   margin-right: -5px;
   margin-left: -5px;
@@ -300,7 +304,6 @@ section {
   }
 }
 
-
 #tumblr-content time {
   float: right;
 }
@@ -406,6 +409,83 @@ section {
     }
     > div:last-child {
       padding-right: 0px;
+    }
+  }
+}
+
+@media print {
+  a[href]::after {
+    content: none;
+  }
+
+  header {
+    height: auto;
+    min-height: 0;
+  }
+
+  h1.title {
+    font-size: 4em;
+  }
+
+  h2, h3 {
+    display: inline-block;
+  }
+
+  h2 {
+    font-size: 2em;
+
+    &::after {
+      content: " | ";
+    }
+  }
+
+  h3 {
+    font-size: 1.5em;
+    &::before {
+      content: " ";
+    }
+  }
+
+  #navbars, #social-row {
+    display: none;
+  }
+
+  .print-only {
+    display: block;
+  }
+
+  #print-contact {
+    float: right;
+    margin: 20px;
+
+    a.social-link {
+      display: block;
+      text-align: left;
+      padding: 0;
+      line-height: 1.5em;
+      font-size: 1.2em;
+      i {
+        font-size: 1.2em;
+        vertical-align: middle;
+      }
+    }
+
+    a[href]::after {
+      content: " " attr(href)
+    }
+  }
+
+  #headshot-container {
+    display: none
+  }
+
+  #highlights {
+    .feature-icon {
+      display: none
+    }
+    .tech-highlight {
+      padding: 0;
+      text-align: left;
     }
   }
 }
