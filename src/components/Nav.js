@@ -4,7 +4,7 @@ export default
 class Nav extends React.Component {
     render() {
         return (
-            <div>
+            <div id="navbars">
                 <nav id="navbar-top" className="navbar navbar-inverse navbar-fixed-top" role="navigation">
                     <div className="navbar-header">
                         <button type="button" className="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">

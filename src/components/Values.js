@@ -11,7 +11,7 @@ class Values extends React.Component {
                 largestHeight = height;
             }
         }
-        console.log("largestHeight: " + largestHeight);
+        //console.log("largestHeight: " + largestHeight);
         for (i = 0; i < 3; i++) {
             React.findDOMNode(this.refs['col-' + i]).style.minHeight = largestHeight+'px';
         }
@@ -22,7 +22,7 @@ class Values extends React.Component {
             <section id="values" className="container-fluid plain">
                 <div className="section-header row">
                     <div className="col-sm-12">
-                        <h2>Thoughts <small>Other values and goals.</small></h2>
+                        <h2>Thoughts</h2><h3>Other values and goals.</h3>
                     </div>
                 </div>
                 <ul className="row">
