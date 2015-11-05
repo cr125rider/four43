@@ -140,6 +140,21 @@ section {
   }
 }
 
+.section-header {
+  h2, h3 {
+    display: inline-block;
+  }
+  h2 {
+    margin-right: 0.5em;
+  }
+  h3 {
+    color: #666;
+    &::before {
+      content: " - ";
+    }
+  }
+}
+
 .feature-icon {
   display: inline-block;
   position: relative;
@@ -431,19 +446,30 @@ section {
     display: inline-block;
   }
 
-  h2 {
-    font-size: 2em;
+  .section-header {
+    h2 {
+      font-size: 2em;
+      margin-right: 0.25em;
+      &::after {
+        content: " |";
+      }
+    }
 
-    &::after {
-      content: " | ";
+    h3 {
+      font-size: 1.5em;
+      color: #333 !important;
+      &::before {
+        content: "" !important;
+      }
     }
   }
 
-  h3 {
-    font-size: 1.5em;
-    &::before {
-      content: " ";
-    }
+  section {
+    padding: 0;
+  }
+
+  button {
+    display: none !important;
   }
 
   #navbars, #social-row {
@@ -457,7 +483,9 @@ section {
   #print-contact {
     float: right;
     margin: 20px;
+  }
 
+  .contact-info {
     a.social-link {
       display: block;
       text-align: left;
@@ -486,6 +514,57 @@ section {
     .tech-highlight {
       padding: 0;
       text-align: left;
+      float: left;
+      width: 33%;
+
+      .tech-container {
+        padding: 0.25em 1em;
+      }
+    }
+  }
+
+  .job-list > li {
+    margin: 0;
+    padding: 0;
+
+    .work-more {
+      display: block;
+      max-height: none;
+      overflow: auto;
+    }
+  }
+
+  #values {
+    > .section-header > * {
+      padding-left: 15px;
+    }
+    > ul > li {
+      padding: 0;
+      margin: 0;
+      float: left;
+      width: 33%;
+      min-height: 0 !important;
+
+      .content-container {
+        padding: 0.25em 1em;
+      }
+    }
+  }
+
+  .footer-contact-info {
+    display: none;
+  }
+
+  #print-contact-footer {
+    h2 {
+      margin-right: 0.5em;
+    }
+    h3 {
+      margin: 0;
+    }
+    a {
+      display: inline-block;
+      margin-right: 1em;
     }
   }
 }

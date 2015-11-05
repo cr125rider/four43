@@ -45,9 +45,7 @@ class Work extends React.Component {
                 <div className="section-header row">
                     <div className="col-sm-6 col-sm-offset-3">
                         <h2>Work Experience</h2>
-                        <p>
-                            Professional employment
-                        </p>
+                        <h3>Professional employment</h3>
                     </div>
                 </div>
                 <ol className="job-list">

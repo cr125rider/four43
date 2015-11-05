@@ -34,7 +34,12 @@ class About extends React.Component {
                             Seth is a software developer based out of Minneapolis, Minnesota. He is passionate about
                             the open web and the opportunities it brings to communication and businesses around the
                             world. Using big data processing, combined with smart analytics, and responsive user interfaces,
-                            Seth creates real-time applications that solve problems for modern day business needs.
+                            Seth creates real-time applications that solve problems for modern day business needs. Seth holds
+                            a Bachelor of Science in Computer Science degree from The University of Minnesota, Twin Cities,
+                            College of Science and Engineering.
+                        </p>
+                        <p>
+
                         </p>
                     </div>
                     <div id="headshot-container" className="col-sm-2">
